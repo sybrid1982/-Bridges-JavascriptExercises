@@ -4,7 +4,7 @@ function numberGame() {
 }
 
 function numberAdder(number) {
-  var result;
+  var result = 0;
   for(var i = 1; i <= number; i++)
   {
     result += i;
@@ -14,10 +14,10 @@ function numberAdder(number) {
 
 function stringBuilder() {
   var keepGoing;
-  var finalString;
+  var finalString = '';
   keepGoing = prompt('Do you want to play?');
 
-  if(keepGoing===yes){
+  if(keepGoing==='yes'){
     do {
         var newWord = prompt('Enter a word');
         if(finalString === '') {
@@ -27,7 +27,7 @@ function stringBuilder() {
         }
         keepGoing = prompt('Do you want to play again?');
     }
-    while(keepGoing==='Yes')
+    while(keepGoing==='yes')
     console.log(finalString);
   }
 }
@@ -35,15 +35,10 @@ function stringBuilder() {
 function nameExciter() {
   var name = prompt('What is your name?');
   var play = prompt('Would you like to print your name?');
-  var iterations = 0;
   var exclamations = '';
   while(play==='yes') {
-    if(iterations > 0) {
-      for(var i = 0; i < iterations; i++) {
-        exclamations += '!';
-      }
-    }
     console.log('Hello.  My name is ' + name + exclamations);
+    exclamations += '!';
     play = prompt('Would you like to play again?');
   }
 }
