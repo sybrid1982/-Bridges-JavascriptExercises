@@ -47,3 +47,31 @@ function nameExciter() {
     play = prompt('Would you like to play again?');
   }
 }
+
+function mealPrompter() {
+  var timeOfDay = prompt('What time of day is it?');
+  var mealType, meal;
+  switch(timeOfDay){
+    case 'morning':
+      mealType = 'breakfast';
+      meal = 'eggs and toast';
+      break;
+    case 'noon':
+      mealType = 'lunch';
+      meal = 'a salad';
+      break;
+    case 'evening':
+      mealType = 'dinner';
+      meal = 'chicken and rice';
+      break;
+    default:
+      mealType = '';
+      meal = '';
+      break;
+  }
+  if(mealType !== ''){
+    console.log('Since it is ' + timeOfDay + ' you should be eating ' + mealType + '. We suggest ' + meal + '.');
+  } else {
+    console.log("We don't know what time of day " + timeOfDay + ' is.');
+  }
+}
