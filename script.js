@@ -1,3 +1,8 @@
+function numberGame() {
+  var number = prompt('Enter a number!');
+  console.log(numberAdder(number));
+}
+
 function numberAdder(number) {
   var result;
   for(var i = 1; i <= number; i++)
