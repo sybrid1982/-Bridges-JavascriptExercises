@@ -9,10 +9,17 @@
 header {
   text-align: center;
   background-color: #4da6ff;
+  border: 2px solid navy;
+  margin-bottom: 20px;
+}
+
+form {
+  margin-bottom: 20px;
 }
 
 body {
   background-color: #99ccff;
+  border: 2px solid navy;
 }
 
 @media screen and (min-width:768px){
