@@ -6,6 +6,11 @@
   border: 1px solid navy;
 }
 
+.button:hover {
+  background-color: navy;
+  color: white;
+}
+
 header {
   text-align: center;
   background-color: #4da6ff;
