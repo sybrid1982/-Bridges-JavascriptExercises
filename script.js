@@ -49,7 +49,7 @@ function nameExciter() {
   var exclamations = '';
   while(play==='yes') {
     var output = 'Hello.  My name is ' + name + exclamations;
-    console.log(output)
+    console.log(output);
     outputDOM.style.display = 'block';
     outputDOM.textContent = output;
     exclamations += '!';
